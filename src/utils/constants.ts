@@ -1,5 +1,8 @@
 import { BloodType } from '@/types';
 
+// API and Socket configuration for Render deployment
+// In production (Render), these will be set via environment variables
+// In development, fallback to localhost
 export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 export const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5000';
 
